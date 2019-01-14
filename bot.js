@@ -21,7 +21,7 @@ const youtube = new YouTube("AIzaSyAdORXg7UZUo7sePv97JyoDqtQVi3Ll0b8");
 const sql = require("sqlite");
  const dateFormat = require('dateformat'); 
  const pretty = require('pretty-ms') 
-const prefix = "3";
+const prefix = "4";
 
 client.on("ready", () => {
   console.log("Yossif | Logged in! Server count: ${client.guilds.size}");
@@ -30,7 +30,7 @@ client.on("ready", () => {
 
 
 
-const adminprefix = "3";
+const adminprefix = "4";
 const developers = ['516364281990611006'];
 
 console.log("YossiF ");
@@ -280,7 +280,7 @@ Discord API: ${client.ping.toFixed(0)} ms\`\`\``);
  
 client.on('message', msg => {
 
-    if (msg.content == '3join') {
+    if (msg.content == '4join') {
         if (msg.member.voiceChannel) {
 
      if (msg.member.voiceChannel.joinable) {
@@ -291,7 +291,7 @@ client.on('message', msg => {
 });
 
 client.on("message", (message) => {
-    if (message.content.startsWith('-delet')) {
+    if (message.content.startsWith('4delet')) {
         if (!message.member.hasPermission('MANAGE_CHANNELS')) return message.reply(":thinking: **انت لا تملك صلاحيات** ");
 
         let args = message.content.split(' ').slice(1);
